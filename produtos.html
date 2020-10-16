@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/functions.js"></script>
+
+</head>
+<body style="background: url('./Imagens/liga2.jpg') no-repeat; background-size: cover;">
+
+        <nav class="menu">
+           
+            <ul>
+            <li><a href="index.html">
+                <img src="./Imagens/logogeek.jpg" alt="Geek Master" width="100"></a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="loja.html">Lojas</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+
+        
+        </nav>
+    
+            <h1 class="titulo" style="color: #7FFF00;">Produtos</h1>
+           <hr>
+
+
+                    <section class="categorias" style="color: #7FFF00;">
+                        <h3>Categorias:</h3>
+                        <ul style="background-color:;>
+                            <li onclick="exibir_categoria('todos')">todos(5)</li>
+                            <li onclick="exibir_categoria('action_figures')">Actions Figures(3)</li>
+                            <li onclick="exibir_categoria('canecas')">Canecas(1)</li>
+                            <li onclick="exibir_categoria('relogios')">Relógios(1)</li>
+                            
+                        </ul>
+
+                    </section>
+
+                    <section class="produtos" style="background-color: #EEE8AA;">
+
+                        <div class="box_produto" id="todos" style="display: block;">
+                            <img src="./Imagens/mario.jpg" width="150px" onclick="destaque(this)">
+                            <br>
+                            <p class="descricao">Mario super Size</p>
+                            <p class="descricao"><strike>R$ 128,00</strike></p><br>
+                            <p class="preco">R$ 75,00</p><br>
+                            <hr>
+
+                            <img src="./Imagens/frdy.jpg" width="150px" onclick="destaque(this)">
+                            <br>
+                            <p class="descricao">Freddy Ultimate</p>
+                            <p class="descricao"><strike>R$ 135,00</strike></p><br>
+                            <p class="preco">R$ 121,00</p><br>
+                            <hr>
+
+                            <img src="./Imagens/goku.jpg" width="150px" onclick="destaque(this)">
+                            <br>
+                            <p class="descricao">Son goku</p>
+                            <p class="descricao"><strike>R$ 183,00</strike></p><br>
+                            <p class="preco">R$ 151,00</p><br>
+                            <hr>
+
+                            <img src="./Imagens/canecasi.jpg" width="150px" onclick="destaque(this)">
+                            <br>
+                            <p class="descricao">Caneca Soco Inglês Punisher – Marvel</p>
+                            <p class="descricao"><strike>R$ 120</strike></p><br>
+                            <p class="preco">R$ 65,00</p><br>
+                            <hr>
+
+                            <img src="./Imagens/relogiomm.jpg" width="150px" onclick="destaque(this)">
+                            <br>
+                            <p class="descricao">Relógio de Parede Wonder Woman Logo – Dc Comics</p>
+                            <p class="descricao"><strike>R$ 126</strike></p><br>
+                            <p class="preco">R$ 99,00</p><br>
+                            <hr>
+                        </div>
+
+                        <div class="box_produto" id="action_figures" style="display: none;">
+                        <img src="./Imagens/mario.jpg" width="150px" onclick="destaque(this)">
+                        <br>
+                        <p class="descricao">Mario super Size</p>
+                        <p class="descricao"><strike>R$ 128,00</strike></p><br>
+                        <p class="preco">R$ 75,00</p><br>
+                        <hr>
+                        </div>
+                      
+                   
+                    <div class="box_produto" id="action_figures" style="display: none;">
+                        <img src="./Imagens/frdy.jpg" width="150px" onclick="destaque(this)">
+                        <br>
+                        <p class="descricao">Freddy Ultimate</p>
+                        <p class="descricao"><strike>R$ 135,00</strike></p><br>
+                        <p class="preco">R$ 121,00</p><br>
+                        <hr>
+                    </div>
+                    
+
+                    <div class="box_produto" id="action_figures" style="display: none;">
+                        <img src="./Imagens/goku.jpg" width="150px" onclick="destaque(this)">
+                        <br>
+                        <p class="descricao">Son goku</p>
+                        <p class="descricao"><strike>R$ 183,00</strike></p><br>
+                        <p class="preco">R$ 151,00</p><br>
+                        <hr>
+                    </div>
+                    
+
+                    <div class="box_produto" id="canecas" style="display: none;">
+                        <img src="./Imagens/canecasi.jpg" width="150px" onclick="destaque(this)">
+                        <br>
+                        <p class="descricao">Caneca Soco Inglês Punisher – Marvel</p>
+                        <p class="descricao"><strike>R$ 120</strike></p><br>
+                        <p class="preco">R$ 65,00</p><br>
+                        <hr>
+                    </div>
+                    
+
+                    <div class="box_produto" id="relogios" style="display: none;">
+                        <img src="./Imagens/relogiomm.jpg" width="150px" onclick="destaque(this)">
+                        <br>
+                        <p class="descricao">Relógio de Parede Wonder Woman Logo – Dc Comics</p>
+                        <p class="descricao"><strike>R$ 126</strike></p><br>
+                        <p class="preco">R$ 99,00</p><br>
+                        <hr>
+                    </div>
+        </section>
+            
+
+
+    <center>
+        <span>
+            <p id="formas_de_pagamento"><strong>Formas de Pagamento</strong></p>
+            <img src="./Imagens/formasde.png" width="300" alt="Formas de Pagamento">
+        </span>
+    </center>
+
+
+    <center><p style="color: white;">&copy; Geek Master</p></center></body>
+</html>
+
+
+
+
+
+
+    </body>
+
+</head>
+
+
+
+</html>
